@@ -1,5 +1,6 @@
 from groq import Groq
 import streamlit as st
+from duckduckgo_search import DDGS
 st.title("Bonjour je suis doodoo l'ia de Paul")
 if "historique" not in st.session_state:
     st.session_state.historique = []
