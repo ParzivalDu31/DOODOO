@@ -1,5 +1,6 @@
 from groq import Groq
 import streamlit as st
+from duckduckgo_search import DDGS
 st.title("Bonjour je suis doodoo l'ia de Paul")
 if "historique" not in st.session_state:
     st.session_state.historique = []
@@ -23,6 +24,9 @@ for msg in st.session_state.historique:
         st.write(msg["content"])
 message = st.chat_input("votre msg...")
 if message:
+    with DDGS() as ddgs:
+        resultats = list(ddgs.text(message, max_results=3))
+        contexte = "\n".join([r['body'] for r in resultats])
     st.session_state.historique.append({"role": "user", "content": message})
     
     reponse = client.chat.completions.create(
