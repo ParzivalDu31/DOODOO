@@ -35,7 +35,7 @@ if message:
     reponse_texte = reponse.choices[0].message.content
     st.session_state.historique.append({"role": "assistant", "content": reponse_texte})
     st.write(reponse_texte)
-     if "génère" in message.lower() or "image" in message.lower():
+    if "génère" in message.lower() or "image" in message.lower():
         prompt = message.replace("génère", "").replace("image", "").strip()
         url = f"https://image.pollinations.ai/prompt/{prompt}?width=1024&height=1024&model=flux"
         st.image(url, caption=prompt)
