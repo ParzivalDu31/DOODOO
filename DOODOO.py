@@ -4,13 +4,17 @@ from duckduckgo_search import DDGS
 st.title("Bonjour je suis doodoo l'ia de Paul")
 if "historique" not in st.session_state:
     st.session_state.historique = []
-st.markdown("""
-<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+import streamlit as st
 
+st.markdown("""
 <style>
-.stApp {
-    font-family: 'Major Mono Display', monospace;
-    background-color: #CDE9F0;
+html, body, [class*="css"]  {
+    font-family: 'Major Mono Display', monospace !important;
+}
+
+/* force aussi les titres */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Major Mono Display', monospace !important;
 }
 </style>
 """, unsafe_allow_html=True)
