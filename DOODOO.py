@@ -6,14 +6,25 @@ if "historique" not in st.session_state:
     st.session_state.historique = []
 import streamlit as st
 
+import streamlit as st
+
 st.markdown("""
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
 <style>
-html, body, [class*="css"]  {
+* {
     font-family: 'Major Mono Display', monospace !important;
 }
 
-/* force aussi les titres */
-h1, h2, h3, h4, h5, h6 {
+/* Streamlit titres ultra spécifiques */
+h1, h2, h3, h4, h5, h6, p, span, div {
+    font-family: 'Major Mono Display', monospace !important;
+}
+
+/* force les composants streamlit */
+[data-testid="stMarkdownContainer"],
+[data-testid="stTitle"],
+[data-testid="stHeader"] {
     font-family: 'Major Mono Display', monospace !important;
 }
 </style>
