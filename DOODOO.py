@@ -6,12 +6,8 @@ if "historique" not in st.session_state:
     st.session_state.historique = []
 st.markdown("""
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-    
-    * {
-        font-family: 'Bungee';
-        color: white;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+</style>
     
     .stApp {
         background-color: #CDE9F0;
