@@ -5,13 +5,13 @@ st.title("Bonjour je suis doodoo l'ia de Paul")
 if "historique" not in st.session_state:
     st.session_state.historique = []
 st.markdown("""
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-</style>
-    
-    .stApp {
-        background-color: #CDE9F0;
-    }
+.stApp {
+    font-family: 'Major Mono Display', monospace;
+    background-color: #CDE9F0;
+}
 </style>
 """, unsafe_allow_html=True)
 client = Groq(api_key="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")
