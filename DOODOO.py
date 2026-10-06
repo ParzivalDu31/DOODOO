@@ -52,7 +52,8 @@ if message:
     ] + st.session_state.historique
 
     reponse = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+       model="qwen/qwen3.8-27b",
+
 
         messages=messages
     )
