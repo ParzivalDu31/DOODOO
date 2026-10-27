@@ -111,7 +111,8 @@ if message:
         {"role": "assistant", "content": reponse_texte}
     )
 
-    st.chat_message("assistant").write(reponse_texte)
+    with st.chat_message("assistant"):
+    st.write(reponse_texte)
 
     # ---------------- IMAGE ----------------
     if "image" in message.lower() or "génère" in message.lower():
