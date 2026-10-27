@@ -10,49 +10,38 @@ st.title("D00D00 ai")
 
 # ---------------- STYLE ----------------
 st.markdown("""
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
 
 <style>
-.stApp,
-[data-testid="stAppViewContainer"],
-[data-testid="stMain"] {
-    background-color: #000000 !important;
+.stApp {
+    background: #000000 !important;
 }
 
-[data-testid="stHeader"] {
-    background-color: #000000 !important;
-}
-
-h1, h2, h3, h4, h5, h6,
-p, span, label {
+h1, h2, h3, p, span, label {
+    color: white !important;
     font-family: 'Rubik Scribble', cursive !important;
-    color: #ffffff !important;
 }
 
-[data-testid="stChatMessage"] {
-    background-color: #151515 !important;
-    color: #ffffff !important;
-    border-radius: 12px;
-}
-
-[data-testid="stChatMessage"] * {
-    color: #ffffff !important;
-}
-
+/* Barre de message */
 [data-testid="stChatInput"] {
-    background-color: #151515 !important;
+    background: #000000 !important;
+    border: none !important;
+}
+
+[data-testid="stChatInput"] > div {
+    background: #202020 !important;
+    border: 1px solid #555 !important;
+    border-radius: 16px !important;
 }
 
 [data-testid="stChatInput"] textarea {
-    background-color: #151515 !important;
-    color: #ffffff !important;
-    caret-color: #ffffff !important;
+    color: white !important;
+    background: transparent !important;
+    font-family: Arial, sans-serif !important;
 }
 
 [data-testid="stChatInput"] textarea::placeholder {
-    color: #bbbbbb !important;
+    color: #aaaaaa !important;
 }
 </style>
 """, unsafe_allow_html=True)
