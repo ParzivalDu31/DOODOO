@@ -16,34 +16,34 @@ st.markdown("""
 
 <style>
 html, body, #root,
-[data-testid="stAppViewContainer"],
-[data-testid="stApp"] {
+[data-testid="stAppViewContainer"] {
     background-color: #000 !important;
-    color: #fff !important;
 }
 
-/* Titre */
+[data-testid="stHeader"],
+[data-testid="stToolbar"],
+footer {
+    background-color: #000 !important;
+}
+
 h1 {
-    color: #fff !important;
+    color: white !important;
     font-family: 'Rubik Scribble', cursive !important;
 }
 
-/* Messages */
 [data-testid="stChatMessage"] {
     background-color: #181818 !important;
-    color: #fff !important;
+    color: white !important;
     border-radius: 12px !important;
     margin-bottom: 10px !important;
 }
 
 [data-testid="stChatMessage"] p,
-[data-testid="stChatMessage"] span,
-[data-testid="stChatMessage"] div {
-    color: #fff !important;
+[data-testid="stChatMessage"] span {
+    color: white !important;
     font-family: Arial, sans-serif !important;
 }
 
-/* Barre de saisie */
 [data-testid="stChatInput"] {
     background: #000 !important;
     border: none !important;
@@ -57,20 +57,12 @@ h1 {
 
 [data-testid="stChatInput"] textarea {
     background: transparent !important;
-    color: #fff !important;
-    caret-color: #fff !important;
-    font-family: Arial, sans-serif !important;
+    color: white !important;
+    caret-color: white !important;
 }
 
 [data-testid="stChatInput"] textarea::placeholder {
     color: #aaa !important;
-}
-
-/* Suppression des bandes */
-[data-testid="stHeader"],
-[data-testid="stToolbar"],
-footer {
-    background: #000 !important;
 }
 </style>
 """, unsafe_allow_html=True)
