@@ -111,6 +111,7 @@ if message:
         {"role": "assistant", "content": reponse_texte}
     )
 
+    
     with st.chat_message("assistant"):
     st.write(reponse_texte)
 
