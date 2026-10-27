@@ -8,7 +8,6 @@ from duckduckgo_search import DDGS
 # ---------------- UI ----------------
 st.title("D00D00 ai")
 
-ci :
 # ---------------- STYLE ----------------
 st.markdown("""
 <link rel="preconnect" href="https://fonts.googleapis.com">
