@@ -10,6 +10,26 @@ st.title("D00D00 ai")
 
 ## ---------------- STYLE ----------------
 st.markdown("""
+<style>
+.stApp {
+    background-color: #000000;
+}
+
+html, body, [data-testid="stAppViewContainer"] {
+    background-color: #000000 !important;
+}
+
+[data-testid="stHeader"] {
+    background-color: #000000 !important;
+}
+
+[data-testid="stChatInput"] {
+    background-color: #111111 !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
