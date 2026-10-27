@@ -8,16 +8,15 @@ from duckduckgo_search import DDGS
 # ---------------- UI ----------------
 st.title("D00D00 ai")
 
-# ---------------- STYLE ----------------
+## ---------------- STYLE ----------------
 st.markdown("""
-<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
 
 <style>
 * {
-    font-family: 'Major Mono Display', monospace !important;
-}
-h1, h2, h3, h4, h5, h6, p, span, div {
-    font-family: 'Major Mono Display', monospace !important;
+    font-family: 'Rubik Scribble', cursive !important;
 }
 </style>
 """, unsafe_allow_html=True)
