@@ -1,5 +1,5 @@
 
-st.title("D00D00 ai")
+
 import os
 import streamlit as st
 from groq import Groq
