@@ -113,7 +113,7 @@ if message:
 
     
     with st.chat_message("assistant"):
-    st.write(reponse_texte)
+        st.write(reponse_texte)
 
     # ---------------- IMAGE ----------------
     if "image" in message.lower() or "génère" in message.lower():
