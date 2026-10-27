@@ -8,14 +8,17 @@ from duckduckgo_search import DDGS
 # ---------------- UI ----------------
 st.title("D00D00 ai")
 
-## ---------------- STYLE ----------------
+ci :
+# ---------------- STYLE ----------------
 st.markdown("""
-<style>
-.stApp {
-    background-color: #000000;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
 
-html, body, [data-testid="stAppViewContainer"] {
+<style>
+.stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {
     background-color: #000000 !important;
 }
 
@@ -23,20 +26,34 @@ html, body, [data-testid="stAppViewContainer"] {
     background-color: #000000 !important;
 }
 
-[data-testid="stChatInput"] {
-    background-color: #111111 !important;
-}
-</style>
-""", unsafe_allow_html=True)
-
-st.markdown("""
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
-
-<style>
-* {
+h1, h2, h3, h4, h5, h6,
+p, span, label {
     font-family: 'Rubik Scribble', cursive !important;
+    color: #ffffff !important;
+}
+
+[data-testid="stChatMessage"] {
+    background-color: #151515 !important;
+    color: #ffffff !important;
+    border-radius: 12px;
+}
+
+[data-testid="stChatMessage"] * {
+    color: #ffffff !important;
+}
+
+[data-testid="stChatInput"] {
+    background-color: #151515 !important;
+}
+
+[data-testid="stChatInput"] textarea {
+    background-color: #151515 !important;
+    color: #ffffff !important;
+    caret-color: #ffffff !important;
+}
+
+[data-testid="stChatInput"] textarea::placeholder {
+    color: #bbbbbb !important;
 }
 </style>
 """, unsafe_allow_html=True)
